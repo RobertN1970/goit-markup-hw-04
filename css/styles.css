@@ -17,7 +17,10 @@ header a {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+}
 header .navtmail {
   margin-left: auto;
 }
@@ -39,17 +42,18 @@ ul {
 
 /*======================== logo================*/
 .web {
-  display: flex;
+  display: inline-block;
   font-family: raleway, sans-serif;
   font-size: 26px;
   color: #212121;
 }
 .webfo {
-
+ display: inline-block;
   font-family: raleway, sans-serif;
   text-decoration: none;
   font-size: 26px;
   color: #ffffff;
+  align-content: center;
 }
 span {
   font-family: raleway, sans-serif;
@@ -145,6 +149,7 @@ h1 {
   margin-top: 30px;
   cursor: pointer;
 }
+
 .icon-lorem {
   display:flex;
   width: 270px;
@@ -161,11 +166,11 @@ h3 {
   line-height: 1.14;
   padding-top: 20px;
 }
+
 p {
   font-size: 14px;
   line-height: 1.71;
 }
-
 
 .lorem {
   display: flex;
@@ -187,24 +192,25 @@ h2 {
   line-height: 1.16;
   padding-top: 94px;
 }
+
 .working-images {
   display: flex;
-  padding-left: 0;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
   gap: 30px;
 }
+
 .border-section .container {
-  display: inline-block;
-  /*width: 1600px;*/
+  display: flex;
+ /* width: 1600px;*/
 }
+
 .border-section {
   background: #f5f4fa;
-  height: 648px;
+  height: 708px;
 }
 .our-team {
-margin-top: 94px;
+
 }
 .works {
   display: flex;
@@ -221,11 +227,32 @@ margin-top: 94px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
+
+}
+
+/*.clients{
+
+}*/
+.client {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition: all 0.15s;
+  --color2: rgba(175, 177, 184, 1);
+   margin-bottom: 94px;
+  
+}
+.client:hover{
+   --color2: #2196f3;
+   border-color:  #2196f3;
+   cursor: pointer;
 }
 .social-list{
   display:inline-block;
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
   background-color: #ffffff;
   border-radius: 50%;
   padding:10px;
@@ -233,8 +260,7 @@ margin-top: 94px;
 }
 
 .social-list:hover{
-
- background-color:  #2196f3;
+  background-color:  #2196f3;
    --color2:rgba(255, 255, 255, 1);
    cursor: pointer;
 }
@@ -266,7 +292,7 @@ margin-top: 94px;
   color: #ececec;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   opacity: 1;
   text-decoration: none;
@@ -296,24 +322,12 @@ margin-top: 94px;
 .text-position {
   padding-left: 30px;
 }
-.client {
-  width:170px;
-  height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
- border-radius: 4px;
- padding: 16px 32px;
- transition: all 0.15s;
- --color2: rgba(175, 177, 184, 1);
-}
-.client:hover{
-   --color2: #2196f3;
-   border-color:  #2196f3;
-   cursor: pointer;
-}
+
 /*============================footer=================*/
 .border-footer{
   display: flex;
-  flex-direction: column;
+ justify-content: center;
+ align-content: flex-start;
   background: #2f303a;
   height: 252px;
 
@@ -327,13 +341,13 @@ margin-top: 94px;
   padding-top: 20px;
   padding-bottom: 9px;
 }
-..footer {
+/*.footer {
   display: flex;
 
   text-decoration: none;
   padding-top: 60px;
 }
-/*.footmail {
+.footmail {
   display: inline-block;
 
 }*/
@@ -351,12 +365,19 @@ ul li a {
   text-decoration: underline;
   transition: all 0.15s;
 }
+div {
+  display:flex;
+  align-items: baseline;
+}
 .foot {
   display:inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   color:#ffffff
+}
+.social-list {
+  align-items: center;
 }
  /*.footmail .foot{
   display: flex;
