@@ -13,6 +13,7 @@ header a {
 .header-style {
   display: flex;
   height: 80px;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
@@ -23,7 +24,7 @@ header .navtmail {
 .container {
   max-width: 1200px;
   width: 100%;
-  align-items: center;
+  /*align-items: center;*/
   margin: 0 auto;
 }
 li {
@@ -44,7 +45,7 @@ ul {
   color: #212121;
 }
 .webfo {
-  display: flex;
+
   font-family: raleway, sans-serif;
   text-decoration: none;
   font-size: 26px;
@@ -89,7 +90,6 @@ nav ul li a:hover {
 }
 .smartphone{
    --color1: #757575;
-
 }
 .smartphone:hover{
    --color1: #2196f3;
@@ -146,11 +146,12 @@ h1 {
   cursor: pointer;
 }
 .icon-lorem {
-  display:inline-block;
+  display:flex;
   width: 270px;
   height: 120px;  
   padding: 25px;
   border: 1px solid  #F5F4FAed;
+  border-radius: 4px;
   background-color:  #F5F4FA; 
 
 }
@@ -203,7 +204,7 @@ h2 {
   height: 648px;
 }
 .our-team {
-  padding-top: 94px;
+margin-top: 94px;
 }
 .works {
   display: flex;
@@ -214,15 +215,29 @@ h2 {
 .img-works  {
   display: flexbox;
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+.social-list{
+  display:inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding:10px;
+  transition: all 0.15s;
+}
 
+.social-list:hover{
 
+ background-color:  #2196f3;
+   --color2:rgba(255, 255, 255, 1);
+   cursor: pointer;
+}
 /*========================= porfolio=============================*/
 .style-img {
   margin: 0;
@@ -282,7 +297,6 @@ h2 {
   padding-left: 30px;
 }
 .client {
-  display:inline block;
   width:170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
@@ -297,15 +311,15 @@ h2 {
    cursor: pointer;
 }
 /*============================footer=================*/
-.border-footer {
+.border-footer{
   display: flex;
   flex-direction: column;
-  justify-content: left;
   background: #2f303a;
   height: 252px;
+
 }
 .sity {
-  display: flex;
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -313,20 +327,18 @@ h2 {
   padding-top: 20px;
   padding-bottom: 9px;
 }
-footer {
+..footer {
   display: flex;
-  flex-direction: row;
+
   text-decoration: none;
   padding-top: 60px;
 }
-.footmail {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+/*.footmail {
+  display: inline-block;
+
+}*/
 .footmail,
 ul li a {
-  display: flex;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -346,8 +358,8 @@ ul li a {
   line-height: 1.71;
   color:#ffffff
 }
- .footmail .foot{
+ /*.footmail .foot{
   display: flex;
   flex-direction: column;
   
-}
+}*/
